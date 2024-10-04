@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=3 uid="uid://3fxmij8n0sc"]
+
+[ext_resource type="Script" path="res://scenes/Cartas/AttackCard.gd" id="1_83ac5"]
+[ext_resource type="Texture2D" uid="uid://b2lrb4crnwie7" path="res://assets/Card_Base_ATTACK.png" id="2_qbae3"]
+
+[node name="CartaAtaque" type="Node"]
+script = ExtResource("1_83ac5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(340, 502)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qbae3")
+
+[node name="MANA" type="Label" parent="."]
+offset_left = 381.0
+offset_top = 423.0
+offset_right = 421.0
+offset_bottom = 446.0
+
+[node name="Descripcion" type="Label" parent="."]
+offset_left = 294.0
+offset_top = 522.0
+offset_right = 341.0
+offset_bottom = 545.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "
+"
+
+[node name="Ataque" type="Label" parent="."]
+offset_left = 374.0
+offset_top = 546.0
+offset_right = 414.0
+offset_bottom = 580.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "a"
+metadata/_edit_use_anchors_ = true
+
+[node name="Nombre" type="Label" parent="."]
+offset_left = 301.0
+offset_top = 432.0
+offset_right = 329.0
+offset_bottom = 452.0
+theme_override_font_sizes/font_size = 14

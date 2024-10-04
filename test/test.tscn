@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqbb5dvegpcmk"]
+
+[ext_resource type="PackedScene" uid="uid://owomvnq8cmp0" path="res://Components/Arquetipos.tscn" id="1_j0vvn"]
+[ext_resource type="PackedScene" uid="uid://c0mpxiih84ia4" path="res://scenes/Mazo.tscn" id="2_tr51d"]
+
+[node name="TestS" type="Node2D" groups=["hola"]]
+
+[node name="Arquetipos" parent="." instance=ExtResource("1_j0vvn")]
+
+[node name="Mazo" parent="." node_paths=PackedStringArray("arquetipos") instance=ExtResource("2_tr51d")]
+arquetipos = NodePath("../Arquetipos")

@@ -14,6 +14,14 @@ config/name="Slay With Cards"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Interfaz="*res://scenes/interfaz.tscn"
+
+[global_group]
+
+prueba=""
+
 [rendering]
 
 renderer/rendering_method="mobile"

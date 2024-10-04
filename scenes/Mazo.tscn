@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0mpxiih84ia4"]
+
+[ext_resource type="Script" path="res://scenes/mazo.gd" id="1_3oys6"]
+
+[node name="Mazo" type="Node"]
+script = ExtResource("1_3oys6")
