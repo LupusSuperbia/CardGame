@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bskyn2mvf2pj1"]
-
-[ext_resource type="Script" path="res://Components/Card.gd" id="1_6mgpk"]
-
-[node name="Carta" type="Node"]
-script = ExtResource("1_6mgpk")

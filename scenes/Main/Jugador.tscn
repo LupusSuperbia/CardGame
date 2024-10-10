@@ -1,13 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://plsk3egkluk2"]
+[gd_scene load_steps=6 format=3 uid="uid://plsk3egkluk2"]
 
 [ext_resource type="Script" path="res://scenes/Main/jugador.gd" id="1_fi3ex"]
 [ext_resource type="PackedScene" uid="uid://c0mpxiih84ia4" path="res://scenes/Mazo.tscn" id="2_ryduh"]
-[ext_resource type="PackedScene" uid="uid://brdgujk7mqmj7" path="res://scenes/Cartas/CartaHealth.tscn" id="3_c5ms2"]
 [ext_resource type="PackedScene" uid="uid://c34n5npny3heq" path="res://Components/HealthComponent.tscn" id="3_k0f3y"]
-[ext_resource type="PackedScene" uid="uid://u4fjl57pawvr" path="res://scenes/Cartas/CartaDefensa.tscn" id="4_gysq3"]
 [ext_resource type="PackedScene" uid="uid://b0k6onxy0eone" path="res://Components/Mana.tscn" id="4_k6qph"]
 [ext_resource type="PackedScene" uid="uid://owomvnq8cmp0" path="res://Components/Arquetipos.tscn" id="5_64kvu"]
-[ext_resource type="PackedScene" uid="uid://3fxmij8n0sc" path="res://scenes/Cartas/CartaAtaque.tscn" id="5_e53mo"]
 
 [node name="Jugador" type="Node2D"]
 script = ExtResource("1_fi3ex")
@@ -15,9 +12,6 @@ script = ExtResource("1_fi3ex")
 [node name="Components" type="Node" parent="."]
 
 [node name="Mazo" parent="Components" node_paths=PackedStringArray("arquetipos") instance=ExtResource("2_ryduh")]
-carta_health = ExtResource("3_c5ms2")
-carta_defensa = ExtResource("4_gysq3")
-carta_ataque = ExtResource("5_e53mo")
 arquetipos = NodePath("../Arquetipos")
 
 [node name="HealthComponent" parent="Components" instance=ExtResource("3_k0f3y")]

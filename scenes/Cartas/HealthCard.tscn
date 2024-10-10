@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://brdgujk7mqmj7"]
+
+[ext_resource type="Script" path="res://scenes/Cartas/HealthCard.gd" id="1_eiftl"]
+[ext_resource type="Texture2D" uid="uid://bh88almj2qa2h" path="res://assets/Card_Base_Support.png" id="2_xdx7a"]
+[ext_resource type="PackedScene" uid="uid://bskyn2mvf2pj1" path="res://Components/Card.tscn" id="3_xb6a4"]
+[ext_resource type="PackedScene" uid="uid://du6nchprygyiu" path="res://Components/Defense.tscn" id="4_153p2"]
+
+[node name="HealthCard" type="Node2D"]
+script = ExtResource("1_eiftl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_xdx7a")
+
+[node name="Card" parent="." instance=ExtResource("3_xb6a4")]
+
+[node name="Components" type="Node" parent="."]
+
+[node name="Defense" parent="Components" instance=ExtResource("4_153p2")]
+
+[node name="Health" type="Label" parent="."]
+offset_left = 578.0
+offset_top = 333.0
+offset_right = 606.0
+offset_bottom = 353.0
+theme_override_font_sizes/font_size = 14

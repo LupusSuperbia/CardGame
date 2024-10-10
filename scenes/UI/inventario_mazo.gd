@@ -1,12 +1,12 @@
-class_name HealthCards extends Card
+extends Control
 
-var health : int = 0 
-@onready var healthLabel: Label = $Health
+@onready var item_list: ItemList = $ItemList
+@export var mazo : Node
+var cartasArray : Array 
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	on_ready_set();
-	healthLabel.text = str(health)
+	add_cartas();
 	pass # Replace with function body.
 
 
@@ -14,5 +14,5 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	pass
 
-func setup(healthParam : int ) : 
-	health = healthParam
+func add_cartas():
+	item_list.add_item("Carta")

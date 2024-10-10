@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://u4fjl57pawvr"]
+
+[ext_resource type="Script" path="res://scenes/Cartas/DefenseCard.gd" id="1_atf26"]
+[ext_resource type="Texture2D" uid="uid://ci4mrchty5ssk" path="res://assets/Card_Base_Defense.png" id="2_41xf3"]
+[ext_resource type="PackedScene" uid="uid://bskyn2mvf2pj1" path="res://Components/Card.tscn" id="2_sdbqm"]
+
+[node name="DefenseCard" type="Node2D"]
+script = ExtResource("1_atf26")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5, -3)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_41xf3")
+
+[node name="Card" parent="." instance=ExtResource("2_sdbqm")]

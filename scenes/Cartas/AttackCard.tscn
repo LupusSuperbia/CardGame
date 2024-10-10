@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://3fxmij8n0sc"]
+
+[ext_resource type="Script" path="res://scenes/Cartas/AttackCard.gd" id="1_83ac5"]
+[ext_resource type="Texture2D" uid="uid://b2lrb4crnwie7" path="res://assets/Card_Base_ATTACK.png" id="2_qbae3"]
+[ext_resource type="PackedScene" uid="uid://bskyn2mvf2pj1" path="res://Components/Card.tscn" id="3_sjdi6"]
+
+[node name="CartaAtaque" type="Node2D" node_paths=PackedStringArray("card")]
+script = ExtResource("1_83ac5")
+card = NodePath("Card")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_qbae3")
+
+[node name="Card" parent="." instance=ExtResource("3_sjdi6")]
+nombre = "asd"
+
+[node name="Ataque" type="Label" parent="."]
+offset_left = 45.0
+offset_top = 41.0
+offset_right = 85.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 24
+text = "a"
